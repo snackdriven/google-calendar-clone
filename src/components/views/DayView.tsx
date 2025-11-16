@@ -1,7 +1,6 @@
 import { useCalendarStore } from '../../store/calendarStore';
 import { getDaysInView, getHoursInDay, isEventInDay, formatEventTime, getEventPosition } from '../../lib/dateUtils';
-import { format, parseISO, isSameDay } from 'date-fns';
-import { CalendarEvent } from '../../types';
+import { format, parseISO } from 'date-fns';
 import { motion } from 'framer-motion';
 
 export function DayView() {

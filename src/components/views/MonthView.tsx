@@ -1,7 +1,6 @@
 import { useCalendarStore } from '../../store/calendarStore';
-import { getDaysInView, isEventInDay, formatEventTime } from '../../lib/dateUtils';
-import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, isSameDay, addWeeks, startOfWeek, endOfWeek } from 'date-fns';
-import { CalendarEvent } from '../../types';
+import { isEventInDay } from '../../lib/dateUtils';
+import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, isSameDay, startOfWeek, endOfWeek } from 'date-fns';
 import { motion } from 'framer-motion';
 
 export function MonthView() {
